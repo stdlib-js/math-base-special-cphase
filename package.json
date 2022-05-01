@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-cphase",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "description": "Compute the argument of a complex number in radians.",
   "license": "Apache-2.0",
   "author": {
