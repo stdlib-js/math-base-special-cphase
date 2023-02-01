@@ -32,30 +32,38 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-cphase
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var cphase = require( '@stdlib/math-base-special-cphase' );
+cphase = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var cphase = require( 'path/to/vendor/umd/math-base-special-cphase/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.cphase;
+})();
+</script>
 ```
 
 #### cphase( re, im )
@@ -77,13 +85,18 @@ var phi = cphase( 5.0, 3.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Complex128 = require( '@stdlib/complex-float64' );
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
-var cphase = require( '@stdlib/math-base-special-cphase' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var re;
 var im;
@@ -96,6 +109,11 @@ for ( i = 0; i < 100; i++ ) {
     z = new Complex128( re, im );
     console.log( 'arg(%s) = %d', z.toString(), cphase( real(z), imag(z) ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -189,7 +207,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs
+[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/umd
 
 <!-- </related-links> -->
 
