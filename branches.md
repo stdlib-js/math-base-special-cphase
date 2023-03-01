@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/cphase"
-click B href "https://github.com/stdlib-js/math-base-special-cphase/tree/main"
-click C href "https://github.com/stdlib-js/math-base-special-cphase/tree/production"
-click D href "https://github.com/stdlib-js/math-base-special-cphase/tree/esm"
-click E href "https://github.com/stdlib-js/math-base-special-cphase/tree/deno"
-click F href "https://github.com/stdlib-js/math-base-special-cphase/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/cphase"
+%% click B href "https://github.com/stdlib-js/math-base-special-cphase/tree/main"
+%% click C href "https://github.com/stdlib-js/math-base-special-cphase/tree/production"
+%% click D href "https://github.com/stdlib-js/math-base-special-cphase/tree/esm"
+%% click E href "https://github.com/stdlib-js/math-base-special-cphase/tree/deno"
+%% click F href "https://github.com/stdlib-js/math-base-special-cphase/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/cphase
