@@ -3,32 +3,7 @@
   "version": "0.0.6",
   "description": "Compute the argument of a double-precision complex floating-point number in radians.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "gypfile": false,
-  "directories": {
-    "benchmark": "./benchmark",
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "main": "./index.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -37,47 +12,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/complex-float64": "^0.0.8",
-    "@stdlib/complex-imag": "^0.0.7",
-    "@stdlib/complex-real": "^0.0.7",
-    "@stdlib/complex-reim": "^0.0.6",
-    "@stdlib/math-base-napi-unary": "^0.0.9",
-    "@stdlib/math-base-special-atan2": "^0.0.6",
-    "@stdlib/types": "^0.0.14",
-    "@stdlib/utils-library-manifest": "^0.0.8",
-    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
-  },
-  "devDependencies": {
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/constants-float64-eps": "^0.0.8",
-    "@stdlib/constants-float64-ninf": "^0.0.8",
-    "@stdlib/constants-float64-pi": "^0.0.8",
-    "@stdlib/constants-float64-pinf": "^0.0.8",
-    "@stdlib/math-base-assert-is-nan": "^0.0.8",
-    "@stdlib/math-base-assert-is-negative-zero": "^0.0.8",
-    "@stdlib/math-base-special-abs": "^0.0.6",
-    "@stdlib/random-base-uniform": "^0.0.6",
-    "@stdlib/utils-try-require": "^0.0.7",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "stdmath",
