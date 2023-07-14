@@ -41,6 +41,11 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 To use in Observable,
 
 ```javascript
+cphase = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cphase/tags). For example,
+
+```javascript
 cphase = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.0.6-umd/browser.js' )
 ```
 
@@ -53,7 +58,7 @@ var cphase = require( 'path/to/vendor/umd/math-base-special-cphase/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.0.6-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -93,7 +98,7 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.0.6-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
