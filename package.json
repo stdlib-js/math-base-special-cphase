@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math-base-special-cphase",
   "version": "0.0.6",
-  "description": "Compute the argument of a complex number in radians.",
+  "description": "Compute the argument of a double-precision complex floating-point number in radians.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -14,6 +14,7 @@
     }
   ],
   "main": "./lib",
+  "gypfile": false,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
@@ -37,13 +38,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-special-atan2": "^0.0.6"
-  },
-  "devDependencies": {
-    "@stdlib/bench": "^0.0.12",
     "@stdlib/complex-float64": "^0.0.8",
     "@stdlib/complex-imag": "^0.0.7",
     "@stdlib/complex-real": "^0.0.7",
+    "@stdlib/complex-reim": "^0.0.6",
+    "@stdlib/math-base-napi-unary": "^0.0.9",
+    "@stdlib/math-base-special-atan2": "^0.0.6",
+    "@stdlib/types": "^0.0.14",
+    "@stdlib/utils-library-manifest": "^0.0.8"
+  },
+  "devDependencies": {
+    "@stdlib/bench": "^0.0.12",
     "@stdlib/constants-float64-eps": "^0.0.8",
     "@stdlib/constants-float64-ninf": "^0.0.8",
     "@stdlib/constants-float64-pi": "^0.0.8",
@@ -51,8 +56,8 @@
     "@stdlib/math-base-assert-is-nan": "^0.0.8",
     "@stdlib/math-base-assert-is-negative-zero": "^0.0.8",
     "@stdlib/math-base-special-abs": "^0.0.6",
-    "@stdlib/math-base-special-round": "^0.0.7",
-    "@stdlib/random-base-randu": "^0.0.8",
+    "@stdlib/random-base-uniform": "^0.0.6",
+    "@stdlib/utils-try-require": "^0.0.7",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
