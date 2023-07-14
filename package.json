@@ -45,7 +45,8 @@
     "@stdlib/math-base-napi-unary": "^0.0.9",
     "@stdlib/math-base-special-atan2": "^0.0.6",
     "@stdlib/types": "^0.0.14",
-    "@stdlib/utils-library-manifest": "^0.0.8"
+    "@stdlib/utils-library-manifest": "^0.0.8",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.12",
