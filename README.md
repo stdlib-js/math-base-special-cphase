@@ -39,7 +39,7 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 ## Usage
 
 ```javascript
-import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@deno/mod.js';
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.0.6-deno/mod.js';
 ```
 
 #### cphase( z )
@@ -66,7 +66,7 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 ```javascript
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@deno/mod.js';
-import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@deno/mod.js';
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.0.6-deno/mod.js';
 
 var z;
 var i;
