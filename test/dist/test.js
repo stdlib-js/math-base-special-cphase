@@ -34,9 +34,9 @@ var cphase = require( './../../dist' );
 
 // FIXTURES //
 
-var positivePositive = require( './../..xtures/julia/positive_positive.json' );
-var negativePositive = require( './../..xtures/julia/negative_positive.json' );
-var negativeNegative = require( './../..xtures/julia/negative_negative.json' );
+var positivePositive = require( './../fixtures/julia/positive_positive.json' );
+var negativePositive = require( './../fixtures/julia/negative_positive.json' );
+var negativeNegative = require( './../fixtures/julia/negative_negative.json' );
 
 
 // TESTS //
