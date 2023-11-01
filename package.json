@@ -40,11 +40,11 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64": "^0.1.0",
-    "@stdlib/complex-imag": "^0.1.0",
-    "@stdlib/complex-real": "^0.1.0",
-    "@stdlib/complex-reim": "^0.1.0",
-    "@stdlib/math-base-napi-unary": "^0.1.0",
+    "@stdlib/complex-float64": "^0.1.1",
+    "@stdlib/complex-imag": "^0.1.1",
+    "@stdlib/complex-real": "^0.1.1",
+    "@stdlib/complex-reim": "^0.1.1",
+    "@stdlib/math-base-napi-unary": "^0.1.1",
     "@stdlib/math-base-special-atan2": "^0.1.0",
     "@stdlib/types": "^0.1.0",
     "@stdlib/utils-library-manifest": "^0.1.1"
@@ -57,7 +57,7 @@
     "@stdlib/constants-float64-pinf": "^0.1.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-assert-is-negative-zero": "^0.1.1",
-    "@stdlib/math-base-special-abs": "^0.1.0",
+    "@stdlib/math-base-special-abs": "^0.1.1",
     "@stdlib/random-base-uniform": "^0.1.0",
     "@stdlib/utils-try-require": "^0.1.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
