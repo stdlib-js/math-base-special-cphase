@@ -46,11 +46,11 @@
     "@stdlib/complex-reim": "^0.1.1",
     "@stdlib/math-base-napi-unary": "^0.1.1",
     "@stdlib/math-base-special-atan2": "^0.1.0",
-    "@stdlib/types": "^0.1.0",
+    "@stdlib/types": "^0.2.0",
     "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.0",
     "@stdlib/constants-float64-eps": "^0.1.1",
     "@stdlib/constants-float64-ninf": "^0.1.1",
     "@stdlib/constants-float64-pi": "^0.1.1",
