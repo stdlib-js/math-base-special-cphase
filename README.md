@@ -43,30 +43,14 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-cphase
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var cphase = require( '@stdlib/math-base-special-cphase' );
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@esm/index.mjs';
 ```
 
 #### cphase( z )
@@ -74,7 +58,7 @@ var cphase = require( '@stdlib/math-base-special-cphase' );
 Computes the [argument][complex-number-argument] of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex-float64' );
+import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
 
 var phi = cphase( new Complex128( 5.0, 3.0 ) );
 // returns ~0.5404
@@ -90,10 +74,15 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Complex128 = require( '@stdlib/complex-float64' );
-var uniform = require( '@stdlib/random-base-uniform' );
-var cphase = require( '@stdlib/math-base-special-cphase' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@esm/index.mjs';
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@esm/index.mjs';
 
 var z;
 var i;
@@ -102,6 +91,10 @@ for ( i = 0; i < 100; i++ ) {
     z = new Complex128( uniform( -500.0, 500.0 ), uniform( -500.0, 500.0 ) );
     console.log( 'arg(%s) = %d', z.toString(), cphase( z ) );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -110,108 +103,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/cphase.h"
-```
-
-#### stdlib_base_cphase( z )
-
-Computes the [argument][complex-number-argument] of a double-precision complex floating-point number.
-
-```c
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
-
-stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
-double out = stdlib_base_cphase( z );
-// returns ~0.5404
-```
-
-The function accepts the following arguments:
-
--   **z**: `[in] stdlib_complex128_t` input value.
-
-```c
-double stdlib_base_cphase( const stdlib_complex128_t z );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/cphase.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
-#include <stdio.h>
-
-int main( void ) {
-    const stdlib_complex128_t x[] = {
-        stdlib_complex128( 3.14, 1.5 ),
-        stdlib_complex128( -3.14, -1.5 ),
-        stdlib_complex128( 0.0, 0.0 ),
-        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
-    };
-
-    stdlib_complex128_t v;
-    stdlib_complex128_t y;
-    double re1;
-    double im1;
-    double re2;
-    double im2;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        v = x[ i ];
-        y = stdlib_base_cphase( v );
-        stdlib_reim( v, &re1, &im1 );
-        stdlib_reim( y, &re2, &im2 );
-        printf( "cphase(%lf + %lfi) = %lf\n", re, im, y );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -236,7 +128,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -300,7 +192,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs
+[@stdlib/math/base/special/cabs]: https://github.com/stdlib-js/math-base-special-cabs/tree/esm
 
 <!-- </related-links> -->
 
