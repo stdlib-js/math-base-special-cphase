@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var uniform = require( '@stdlib/random-base-uniform' );
 var Complex128 = require( '@stdlib/complex-float64' );
 var isnan = require( '@stdlib/math-base-assert-is-nan' );
