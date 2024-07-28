@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-cphase",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Compute the argument of a double-precision complex floating-point number in radians.",
   "license": "Apache-2.0",
   "author": {
@@ -40,29 +40,29 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64-ctor": "^0.0.1",
-    "@stdlib/complex-float64-reim": "github:stdlib-js/complex-float64-reim#main",
-    "@stdlib/complex-imag": "^0.2.1",
-    "@stdlib/complex-real": "^0.2.1",
-    "@stdlib/math-base-napi-unary": "^0.2.1",
+    "@stdlib/complex-float64-ctor": "^0.0.3",
+    "@stdlib/complex-float64-imag": "^0.1.1",
+    "@stdlib/complex-float64-real": "^0.1.1",
+    "@stdlib/complex-float64-reim": "^0.1.2",
+    "@stdlib/math-base-napi-unary": "^0.2.3",
     "@stdlib/math-base-special-atan2": "^0.2.1",
     "@stdlib/types": "^0.3.2",
-    "@stdlib/utils-library-manifest": "^0.2.1"
+    "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/constants-float64-eps": "^0.2.1",
-    "@stdlib/constants-float64-ninf": "^0.2.1",
-    "@stdlib/constants-float64-pi": "^0.2.1",
-    "@stdlib/constants-float64-pinf": "^0.2.1",
-    "@stdlib/math-base-assert-is-nan": "^0.2.1",
-    "@stdlib/math-base-assert-is-negative-zero": "^0.2.1",
-    "@stdlib/math-base-special-abs": "^0.2.1",
+    "@stdlib/constants-float64-eps": "^0.2.2",
+    "@stdlib/constants-float64-ninf": "^0.2.2",
+    "@stdlib/constants-float64-pi": "^0.2.2",
+    "@stdlib/constants-float64-pinf": "^0.2.2",
+    "@stdlib/math-base-assert-is-nan": "^0.2.2",
+    "@stdlib/math-base-assert-is-negative-zero": "^0.2.2",
+    "@stdlib/math-base-special-abs": "^0.2.2",
     "@stdlib/random-base-uniform": "^0.2.1",
-    "@stdlib/utils-try-require": "^0.2.1",
+    "@stdlib/utils-try-require": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
