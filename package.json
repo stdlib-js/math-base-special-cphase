@@ -46,7 +46,7 @@
     "@stdlib/complex-float64-reim": "^0.1.2",
     "@stdlib/math-base-napi-unary": "^0.2.3",
     "@stdlib/math-base-special-atan2": "^0.3.0",
-    "@stdlib/types": "^0.3.2",
+    "@stdlib/types": "^0.4.1",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
