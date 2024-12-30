@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,32 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var addon = require( './../src/addon.node' );
-
-
-// MAIN //
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Computes the argument of a double-precision complex floating-point number in radians.
 *
-* @private
-* @param {Complex128} z - complex number
-* @returns {number} argument
+* ## Notes
+*
+* -   The argument of a complex number, also known as the phase, is the angle of the radius extending from the origin to the complex number plotted in the complex plane and the positive real axis.
+*
+* @param z - complex number
+* @returns argument
 *
 * @example
 * var Complex128 = require( '@stdlib/complex-float64-ctor' );
+*
 * var phi = cphase( new Complex128( 5.0, 3.0 ) );
 * // returns ~0.5404
 */
-function cphase( z ) {
-	return addon( z );
-}
+declare function cphase( z: Complex128 ): number;
 
 
 // EXPORTS //
 
-module.exports = cphase;
+export = cphase;
