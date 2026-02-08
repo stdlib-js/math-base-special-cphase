@@ -50,6 +50,11 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 ## Usage
 
 ```javascript
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cphase/tags). For example,
+
+```javascript
 import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.2.3-esm/index.mjs';
 ```
 
@@ -82,7 +87,7 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@esm/index.mjs';
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@esm/index.mjs';
-import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.2.3-esm/index.mjs';
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@esm/index.mjs';
 
 var z;
 var i;
