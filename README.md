@@ -50,6 +50,11 @@ The [argument][complex-number-argument] of a complex number, also known as the *
 ## Usage
 
 ```javascript
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cphase/tags). For example,
+
+```javascript
 import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.2.3-deno/mod.js';
 ```
 
@@ -77,7 +82,7 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 ```javascript
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@deno/mod.js';
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@deno/mod.js';
-import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@v0.2.3-deno/mod.js';
+import cphase from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cphase@deno/mod.js';
 
 var z;
 var i;
